@@ -4,7 +4,7 @@ export default class Home extends Component {
   render () {
     return (
       <div>
-        Home. Not Protected. Anyone can see this.
+        Landing Page. AUTHENTICATION NOT REQUIRED. Anyone can see this.
       </div>
     )
   }

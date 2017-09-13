@@ -8,12 +8,12 @@ function setErrorMsg(error) {
 }
 
 export default class Register extends Component {
-  state = { registerError: null }
+  state = { registerError: null };
   handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     auth(this.email.value, this.pw.value)
       .catch(e => this.setState(setErrorMsg(e)))
-  }
+  };
   render () {
     return (
       <div className="col-sm-6 col-sm-offset-3">
